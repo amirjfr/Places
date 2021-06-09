@@ -14,12 +14,15 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Places ✨</h3>
+  <h3 align="center">Places</h3>
+  <h5 align="center"><a href="https://www.mongodb.com/">MongoDB</a> | <a href="https://expressjs.com/">Express</a> | <a href="https://reactjs.org/">React</a> | <a href="https://nodejs.org/en/">Node.js</a></h5>
   
   <h4 align="center">Team Name: Green 🌱</h4>
 
   <p align="center">
-    Find the best places recommended by only your trusted friends
+    Find the best places recommended by only your trusted friends.
+    <br />
+    Group project for <a href="https://blogs.ubc.ca/cpsc436i2021s/"> CPSC 455</a> (Applied Industry Practices)
     <br />
     <br />
   </p>
@@ -53,32 +56,33 @@
 ## Project Description 
 
 **Who is it for?**
-- People in cities (mostly) with lots of choices of (restaurants/bars/breweries/parks) who want to talk with trusted groups about what places they like best
+- People in cities (mostly) with lots of choices of amenities (restaurants/bars/breweries/parks) who want to talk with trusted groups about what places they like best
 
 **What will it do?**
-- Allow people to enter rankings/reviews for places
+- Allow people to enter ratings/reviews for places
 - Help people find the best place out of many options through reliable, trusted recommendations
 - Help people recommend the places they like to their friends, and keep this knowledge without forgetting
 
 **What type of data will it store?**
-- Members of a group
-- List of places 
-- Set of criteria a group considers important
-- Individuals’ rankings of individual places in specific categories
+- Registered users and groups
+- Members of groups
+- Lists of places 
+- Sets of criteria a group considers important
+- Individuals’ ratings of individual places in specific categories, using specific criteria
 
 **What will users be able to do with this data?**
-- Joining an existing group or creating a new one. 
+- Join an existing group or create a new one
 - Add a rating for a place
 - Look at ranked lists of places in given categories
 - Search for a place based on needed requirements (park in Vancouver with playground, bar in Burnaby open at 11pm)
 - Decide where to go 
 
 **What is some additional functionality you can add/remove based on time constraints?**
-- Ability to publish a group’s ranking to the public
-  - Option to publish only aggregate data or rankings
-- Create custom ranking criteria/templates for each category of place
+- Ability to publish a group’s ratings to the public
+  - Option to publish only aggregate data or ranking
+- Create custom rating criteria/templates for each category of place
 - Allow users to add profile pictures and images of the places
-- Users can add categories for places-
+- Allow users to add new categories for places
 
 
 <!-- PROJECT TASK REQUIREMENTS -->
@@ -89,13 +93,12 @@
 - Create a group
 - Request and join an existing group / accept or reject requests to join
 - Each user can rate (scale 1-5)  a place, rating is attached to their group
-- View places by category and order by average ranking
+- View places by category and order by average rating
 
 **Standard Requirements**
 - Modify an existing rating
 - Create new categories 
-- Add custom criteria for each category.
-  - Creator of custom criteria can describe each criterion/categories
+- Choose custom criteria for a category (by group)
 - Display ranked list of places based on selected criteria
   - Multiple search criteria including location tags
 - Allow users to upload photos for their profile picture or of places
@@ -105,21 +108,20 @@
 - Moderator ability for group creator:
   - Add members
   - Delete members
-  - Create templates
 
 **Stretch Requirements**
-- User should be able to save favorite places
-- Engaging dashboard with newly reviewed places, highest ranking places, and new members that have joined the group
-- Users can be members of multiple groups and post different information to different groups
+- Allow user to save favorite places
+- Engaging dashboard with newly reviewed places, highest-rated places, and new members that have joined the group
+- Allow users to be members of multiple groups and post different information to different groups
 
 
 <!-- TASK BREAKDOWN -->
 ## Task Breakdown 
 
 - Register new account or log in to existing account
-  - Login UI with email and password inputs and login button
+  - Login UI with email/user name and password inputs and login button
   - Button to Register and form for creating new account
-    - Full Name, Email, Password
+    - User Name, Email, Password
   - Database structure for storing email and password for each user
   - Simple authentication backend & remember user on the same device
 
@@ -127,7 +129,7 @@
   - Display list of existing places to choose from 
     - Or option to create new place with name and address
   - User can choose a numerical rating (1-5)
-  - Submit button adds rating of place, for user’s group, attributed to user
+  - Submit to add rating of place, for user’s group, attributed to user
   - Database structure to associate rating of place to a group and user.
 
 
@@ -156,9 +158,7 @@ Johnny Li - [GitHub](https://github.com/johnnybcs) - [LinkedIn](https://www.link
 
 Laura Rodgers - [GitHub](https://github.com/laurarodgers) - [LinkedIn](https://www.linkedin.com/in/rodgerslaura/)
 
-Sassan Shokoohi - [GitHub](https://github.com/sassansh) - [LinkedIn](https://www.linkedin.com/in/sassanshokoohi/)
-
-Project Link: [https://github.com/sassansh/Places](https://github.com/sassansh/Places)
+Sassan Shokoohi - [GitHub](https://github.com/sassansh) - [LinkedIn](https://www.linkedin.com/in/sassanshokoohi/) - [Personal Website](https://sassanshokoohi.ca)
 
 
 <!-- LICENSE -->
