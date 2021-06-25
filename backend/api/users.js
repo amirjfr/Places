@@ -1,11 +1,10 @@
-import express from "express";
-import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
-import dotenv from "dotenv";
 import User from "../models/User.js";
-import logger from "../tools/logger.js";
-import validateRegisterInput from "../validation/register.js";
+import bcrypt from "bcryptjs";
+import dotenv from "dotenv";
+import express from "express";
+import jwt from "jsonwebtoken";
 import validateLoginInput from "../validation/login.js";
+import validateRegisterInput from "../validation/register.js";
 
 dotenv.config();
 
@@ -44,7 +43,7 @@ router.post("/register", (req, res) => {
           newUser
             .save()
             .then((user) => res.json(user))
-            .catch((err) => logger.error(err));
+            .catch((err) => console.log(err));
         });
       });
     }

@@ -1,0 +1,10 @@
+.num-of-places {
+  margin: 10px;
+  font-size: medium;
+  float: right;
+}
+
+.category-name {
+  margin: 10px;
+  font-size: large;
+}
